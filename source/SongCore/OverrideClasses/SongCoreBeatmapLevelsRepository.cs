@@ -6,8 +6,8 @@ namespace SongCore.OverrideClasses
 {
     public class SongCoreBeatmapLevelsRepository : BeatmapLevelsRepository
     {
-        private static readonly FieldAccessor<BeatmapLevelsRepository, IReadOnlyList<BeatmapLevelPack>>.Accessor BeatmapLevelPacksAccessor =
-            FieldAccessor<BeatmapLevelsRepository, IReadOnlyList<BeatmapLevelPack>>.GetAccessor(nameof(_beatmapLevelPacks));
+        private static readonly FieldAccessor<BeatmapLevelsRepository, BeatmapLevelPack[]>.Accessor BeatmapLevelPacksAccessor =
+            FieldAccessor<BeatmapLevelsRepository, BeatmapLevelPack[]>.GetAccessor(nameof(_beatmapLevelPacks));
 
         private readonly List<BeatmapLevelPack> _customBeatmapLevelPacks = new List<BeatmapLevelPack>();
 
